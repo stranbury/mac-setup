@@ -37,10 +37,12 @@ brew install webkit2png
 
 # Install more recent versions of some OS X tools.
 brew install vim --override-system-vi
-brew install homebrew/dupes/openssh
 
 # Install node
 brew install node
+
+# Install watchman
+brew install watchman
 
 # Install other useful binaries.
 brew install imagemagick --with-webp
