@@ -29,12 +29,12 @@ brew cask install imageoptim 2> /dev/null
 brew cask install transmit 2> /dev/null
 
 # browsers
-brew cask install google-chrome --HEAD 2> /dev/null
+brew cask install google-chrome-dev 2> /dev/null
 brew cask install opera 2> /dev/null
-brew cask install firefox 2> /dev/null
+brew cask install firefoxdeveloperedition 2> /dev/null
 
 # less often
-brew cask install vlc 2> /dev/null
+#brew cask install vlc 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install appcleaner 2> /dev/null
 brew cask install the-unarchiver 2> /dev/null
