@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+# ****************************************************
+#
+#   Setup - Cask
+#
+# ****************************************************
+
+# to maintain cask ....
+# brew update && brew upgrade brew-cask && brew cleanup && brew cask cleanup`
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+brew tap caskroom/fonts
+
+# daily
+brew cask install dropbox 2> /dev/null
+brew cask install flux 2> /dev/null
+brew cask install hipchat 2> /dev/null
+brew cask install spectacle 2> /dev/null
+brew cask install caffeine 2> /dev/null
+
+# Fonts
+brew cask install font-source-code-pro 2> /dev/null
+
+# dev
+brew cask install iterm2 2> /dev/null
+brew cask install sublime-text3 2> /dev/null
+brew cask install imageoptim 2> /dev/null
+brew cask install transmit 2> /dev/null
+
+# browsers
+brew cask install google-chrome --HEAD 2> /dev/null
+brew cask install opera 2> /dev/null
+brew cask install firefox 2> /dev/null
+
+# less often
+brew cask install vlc 2> /dev/null
+brew cask install spotify 2> /dev/null
+brew cask install appcleaner 2> /dev/null
+brew cask install the-unarchiver 2> /dev/null
