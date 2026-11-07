@@ -1,0 +1,13 @@
+#!/usr/bin/env sh
+
+export PATH="$HOME/bin:$HOME/.local/bin:$PATH"
+export EDITOR="${EDITOR:-vi}"
+export VISUAL="${VISUAL:-$EDITOR}"
+
+if [ -f "$MAC_SETUP_ROOT/unix/aliases" ]; then
+  . "$MAC_SETUP_ROOT/unix/aliases"
+fi
+
+if [ -n "${BASH_VERSION:-}" ] && [ -f "$MAC_SETUP_ROOT/unix/bashrc" ]; then
+  . "$MAC_SETUP_ROOT/unix/bashrc"
+fi

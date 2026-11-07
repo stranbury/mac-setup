@@ -1,0 +1,17 @@
+#!/usr/bin/env sh
+
+alias ll='ls -lah'
+alias la='ls -A'
+alias l='ls -CF'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias c='clear'
+alias g='git'
+alias gs='git status --short --branch'
+alias gl='git log --oneline --decorate --graph -12'
+
+if [ "$(uname -s 2>/dev/null || true)" = "Darwin" ]; then
+  alias show='defaults write com.apple.finder AppleShowAllFiles -bool true && killall Finder'
+  alias hide='defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder'
+  alias localip='ipconfig getifaddr en0'
+fi
